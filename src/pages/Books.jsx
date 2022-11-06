@@ -6,6 +6,7 @@ import Book from '../ui/Book'
 // 'books: initialBooks' renames it
 export default function Books({ books: initialBooks }) {
     const [books, setBooks] = useState(initialBooks);
+
     function filterBooks(filter) {
         if (filter === "LOW_TO_HIGH") {
             // basically clone the arr using .slice bc sort changes arr passed to it. for ex, const[books <--, setBooks]
